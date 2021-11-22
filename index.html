@@ -46,7 +46,7 @@
                     <div class="emailForms">
                         <label for="email">Email</label>
                         <div class="emailInput">
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                     </div>
                     <!-- Card information -->
@@ -54,7 +54,7 @@
                         <label for="cardInformation">Card Information</label>
                         <div class="cardInputs">
                             <div class="inputCard">
-                                <input type="text" maxlength="19" autocomplete="off" placeholder="1234 1234 1234 1234" name="cardInformation" id="cardInformation">
+                                <input type="text" maxlength="19" autocomplete="off" placeholder="1234 1234 1234 1234" name="cardInformation" id="cardInformation" required>
                                 <div class="cardImages">
                                     <img src="images/Visa.png" alt="Visa">
                                     <img src="images/Mastercard.png" alt="Master Card">
@@ -63,9 +63,9 @@
                                 </div>
                             </div>
                             <div class="inputsPass">
-                                <input type="text" maxlength="5" placeholder="MM / YY" name="cardInformation" id="cardExpiration">
+                                <input type="text" maxlength="5" placeholder="MM / YY" name="cardInformation" id="cardExpiration" required>
                                 <div class="inputCcv">
-                                    <input type="text" placeholder="CVC" name="password" id="cardPassword" maxlength="3">
+                                    <input type="text" placeholder="CVC" name="password" id="cardPassword" maxlength="3" required>
                                     <div class="ccvImage">
                                         <img src="./images/CVC-Card.png" alt="CVC">
                                     </div>
@@ -77,7 +77,7 @@
                     <div class="nameCard">
                         <label for="nameCard">Name on card</label>
                         <div class="inputName">
-                            <input type="text">
+                            <input type="text" required>
                         </div>
                     </div>
                     <!-- Country or region -->
