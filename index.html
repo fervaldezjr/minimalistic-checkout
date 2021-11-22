@@ -9,7 +9,81 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-    
+    <!-- NAV // Button back to the market -->
+    <nav>
+        <a href="#" class="back">
+            <img src="images/icons8-atrás-100.png" alt="Vector atras">
+            <p>Back to the Market</p>
+        </a>
+    </nav>
+    <!-- Products details // Image, product and price -->
+    <main>
+        <img src="images/image-7.png" alt="New mac">
+        <h1>New mac</h1>
+        <h2>$ 899.00</h2>
+        <!-- PAYMENT // Buttons and forms -->
+        <section class="paymentsApple">
+            <button class="applePay"></button>
+        </section>
+        <section class="paymentsCards">
+            <div class="paymentsTitle">
+                <div class="line">
+                    <img src="/images/Line 3.png" alt="">
+                </div>
+                <h3>Or pay whit card</h3>
+                <div class="line">
+                    <img src="/images/Line 3.png" alt="">
+                </div>
+            </div>
+            <!-- Email -->
+            <div class="emailForms">
+                <label for="email">Email</label>
+                <div class="emailInput">
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+            <!-- Card information -->
+            <div class="cardInformation">
+                <label for="cardInformation">Card Information</label>
+                <div class="cardInputs">
+                    <div class="inputCard">
+                        <input type="text" size="20" autocomplete="off" placeholder="1234 1234 1234 1234" name="cardInformation" id="cardInformation">
+                        <div class="cardImages">
+                            <img src="images/Visa.png" alt="Visa">
+                            <img src="images/Mastercard.png" alt="Master Card">
+                            <img src="images/American-Express.png" alt="American Express">
+                            <img src="images/Discover.png" alt="Discover">
+                        </div>
+                    </div>
+                    <div class="inputsPass">
+                        <input type="text" placeholder="MM / YY" name="cardInformation" id="cardExpiration">
+                        <div class="inputCcv">
+                            <input type="text" placeholder="CVC" name="password" id="cardPassword">
+                            <div class="ccvImage">
+                                <img src="./images/CVC-Card.png" alt="CVC">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Name on card -->
+            <div class="nameCard">
+                <label for="nameCard">Name on card</label>
+                <div class="inputName">
+                    <input type="text">
+                </div>
+            </div>
+            <!-- Country or region -->
+            <div class="countryRegion">
+                <label for="country">Country or Region</label>
+                <div class="content-select">
+                    <select name="countries" id="countries"></select>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>

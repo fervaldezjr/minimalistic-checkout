@@ -1,0 +1,309 @@
+/* ################################################# Index of styles #########
+1 GENERAL STYLES
+2 NAV // Button back to the market
+3 PRODUCTS DETAILS // Image, product and price
+4 PAYMENT // Buttons and forms
+5 FOOTER
+############################################################################## */
+
+
+/* 1 GENERAL STYLES ########################################################## */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 2 NAV // Button back to the market ###################################### */
+nav a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 1rem 0;
+    padding: .5rem;
+    width: fit-content;
+
+    color: #1A1F36;
+    font-weight: 600;
+}
+
+nav img {
+    max-width: 1rem;
+}
+
+nav p {
+    font-size: 1rem;
+}
+
+/* 3 PRODUCTS DETAILS // Image, product and price ############################ */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2rem 0;
+}
+
+main img {
+    margin: 4rem 0 1.5rem 0;
+}
+
+main h1 {
+    margin: 0.5rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8792A2;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: #1A1F36;
+}
+
+/* 4 PAYMENT // Buttons and forms ########################################## */
+.paymentsApple {
+    margin: 1rem;
+}
+
+button {
+    padding: 1.5rem 8.8rem;
+
+    display: flex;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12), 0px 2px 5px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.08);
+
+    background-color: black;
+    background-image: url(../images/Apple-Pay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ### Pay whit card */
+.paymentsTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 1rem;
+}
+
+.paymentsCards h3 {
+    font-weight: 500;
+    font-size: 1rem;
+
+    background-color: #ffffff;
+    color: #8792A2;
+
+    text-align: center;
+    position: relative;
+    width: 75%;
+}
+
+.line img {
+    margin: .3rem 0;
+    width: 100%;
+    position: relative;
+}
+
+/* ### Forms */
+
+    /* ### Email */
+.emailForms {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem;
+}
+
+.paymentsCards label {
+    margin: .2rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1F36;
+}
+
+.emailForms .emailInput {
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+}
+
+.emailInput input {
+    border: none;
+    border-radius: 8px;
+    
+    width: 95%;
+    padding: .4rem;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.emailInput input:focus,
+.inputCard input:focus,
+.inputsPass input:focus {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+    /* ### Card information */
+.cardInformation {
+    margin: 1rem;
+}
+    
+.inputCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    box-sizing: border-box;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    margin: 0;
+}
+
+.inputCard input {
+    border: none;
+    border-radius: 8px;
+    
+    width: 97%;
+    padding: .4rem;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.cardImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImages img {
+    margin: 0 .3rem;
+}
+
+    /* ### Password and MM/YY */
+.inputsPass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.04);
+
+}
+
+.inputsPass input {
+    border: none;
+    border-radius: 8px;
+    
+    width: 50%;
+    padding: .4rem;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.inputCcv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputCcv input {
+    border-left: 1px solid rgba(60, 66, 87, 0.12);
+    border-radius: 0;
+}
+
+.inputCcv input:focus {
+    border-left: 1px solid rgba(60, 66, 87, 0.12);
+}
+
+.ccvImage img{
+    margin: 0 .3rem;
+}
+
+    /* Name on card */
+.nameCard {
+    margin: 1rem;
+}
+
+.nameCard .inputName {
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+}
+
+.inputName input {
+    border: none;
+    border-radius: 8px;
+    
+    width: 95%;
+    padding: .4rem;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.inputName input:focus {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+    /* Country or Region */
+.countryRegion {
+    margin: 1rem;
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+
+.content-select select{
+	border: 1px solid rgba(60, 66, 87, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+
+    
+    width: 100%;
+    padding: .4rem;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.content-select select:focus {
+    border: none;
+    outline: none;
+}
+
+.content-select select::-ms-expand {
+    display: none;
+}
