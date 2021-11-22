@@ -335,6 +335,18 @@ main h2 {
     display: none;
 }
 
+.content-select {
+    position: relative;
+}
+
+.content-select img {
+    position: absolute;
+    top: -53px;
+    right: 18px;
+
+    width: 15px;
+}
+
 /* ZIP */
 
 .content-select .zip-input {
@@ -368,7 +380,7 @@ main h2 {
 }
 
 .payCard button {
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 1rem 7.2rem;
 
     border: none;
@@ -424,21 +436,35 @@ footer .terms a{
         font-size: 30px;
     }
 
+    nav p {
+        font-size: 1.5rem;
+    }
+
     main {
-        border: 1px solid black;
         height: 80vh;
 
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     main .products-content {
         display: flex;
         flex-direction: column-reverse;
+
+        border-right: solid 1px #8792A2;
+        padding: 5rem;
     }
 
     .products-content .products-text {
         display: flex;
+    }
+
+    .products-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .products-text h2 {
+        font-size: 3.5rem;
     }
 
     .products-content .newMac-mobile {
@@ -450,6 +476,58 @@ footer .terms a{
     }
 
     main .payments-content {
-        border-left: solid 1px #8792A2;
+        padding: 5rem;
+    }
+
+    .paymentsApple button {
+        padding: 2rem 15rem;
+    }
+
+    .paymentsTitle h3 {
+        font-size: 2rem;
+    }
+
+    .paymentsCards label {
+        font-size: 1.5rem;
+    }
+    
+    .emailInput input,
+    .inputCard input,
+    .inputsPass input,
+    .inputName input,
+    select,
+    .zip-input input {
+        border: none;
+        border-radius: 8px;
+        
+        width: 95%;
+        padding: 1rem;
+
+        font-size: 1.5rem;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .inputCcv input {
+        border-left: 1px solid rgba(60, 66, 87, 0.12);
+        border-radius: 0;
+    }
+
+    .payCard button {
+        padding: 1.5rem 10rem;
+
+        font-size: 1.5rem;
+    }
+
+    .cardImages img {
+        width: 40px;
+        margin: 0 .3rem;
+    }
+
+    .ccvImage img {
+        width: 40px;
+    }
+
+    .content-select img {
+        width: 25px;
     }
 }

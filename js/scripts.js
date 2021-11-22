@@ -1,3 +1,5 @@
+// API Rest Countries
+
 let countries;
 
 fetch("https://restcountries.com/v2/all")
@@ -13,3 +15,28 @@ function initialize(countriesData) {
     }
     document.getElementById("countries").innerHTML = options;
 }
+
+// Validación de números de tarjeta
+
+const cardInfo = document.querySelector('#cardInformation');
+
+cardInfo.addEventListener('keyup', (e) => {
+	let valorInput = e.target.value;
+
+	cardInfo.value = valorInput
+	// Eliminamos espacios en blanco
+	.replace(/\s/g, '')
+	// Eliminar las letras
+	.replace(/\D/g, '')
+	// Ponemos espacio cada cuatro numeros
+	.replace(/([0-9]{4})/g, '$1 ')
+	// Elimina el ultimo espaciado
+	.trim();
+
+	cardInfo.textContent = valorInput;
+
+	if(valorInput == ''){
+		cardInfo.textContent = '#### #### #### ####';
+
+	}
+});

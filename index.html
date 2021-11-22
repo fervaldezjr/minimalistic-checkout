@@ -53,7 +53,7 @@
                     <label for="cardInformation">Card Information</label>
                     <div class="cardInputs">
                         <div class="inputCard">
-                            <input type="text" size="20" autocomplete="off" placeholder="1234 1234 1234 1234" name="cardInformation" id="cardInformation">
+                            <input type="text" maxlength="19" autocomplete="off" placeholder="1234 1234 1234 1234" name="cardInformation" id="cardInformation">
                             <div class="cardImages">
                                 <img src="images/Visa.png" alt="Visa">
                                 <img src="images/Mastercard.png" alt="Master Card">
@@ -64,7 +64,7 @@
                         <div class="inputsPass">
                             <input type="text" placeholder="MM / YY" name="cardInformation" id="cardExpiration">
                             <div class="inputCcv">
-                                <input type="text" placeholder="CVC" name="password" id="cardPassword">
+                                <input type="text" placeholder="CVC" name="password" id="cardPassword" maxlength="3">
                                 <div class="ccvImage">
                                     <img src="./images/CVC-Card.png" alt="CVC">
                                 </div>
@@ -84,6 +84,7 @@
                     <label for="country">Country or Region</label>
                     <div class="content-select">
                         <select name="countries" id="countries"></select>
+                        <img src="images/icons8-chevron-abajo-100.png" alt="Chevron abajo">
                         <div class="zip-input">
                             <input type="zip" name="zip" id="zip" placeholder="ZIP">
                         </div>
