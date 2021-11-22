@@ -4,6 +4,7 @@
 3 PRODUCTS DETAILS // Image, product and price
 4 PAYMENT // Buttons and forms
 5 FOOTER
+6 MEDIA QUERIES
 ############################################################################## */
 
 
@@ -55,6 +56,23 @@ main {
     margin: 2rem 0;
 }
 
+.products-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newMac-desktop {
+    display: none;
+}
+
+.products-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main img {
     margin: 4rem 0 1.5rem 0;
 }
@@ -73,6 +91,12 @@ main h2 {
 }
 
 /* 4 PAYMENT // Buttons and forms ########################################## */
+.payments-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .paymentsApple {
     margin: 1rem;
 }
@@ -356,6 +380,13 @@ main h2 {
     font-size: 1rem;
     font-weight: 600;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.payCard button:hover {
+    background-color: #8792A2;
+    transition: .7s;
+
 }
 
 /* 5 FOOTER ########################################## */
@@ -385,4 +416,40 @@ footer .signature img {
 footer .terms a{
     font-size: .8rem;
     color: #8792A2;
+}
+
+/* 6 MEDIA QUERIES ######################################################## */
+@media (min-width: 1024px) {
+    body {
+        font-size: 30px;
+    }
+
+    main {
+        border: 1px solid black;
+        height: 80vh;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    main .products-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .products-content .products-text {
+        display: flex;
+    }
+
+    .products-content .newMac-mobile {
+        display: none;
+    }
+
+    .products-content .newMac-desktop {
+        display: flex;
+    }
+
+    main .payments-content {
+        border-left: solid 1px #8792A2;
+    }
 }
