@@ -41,59 +41,61 @@
                         <img src="/images/Line 3.png" alt="">
                     </div>
                 </div>
-                <!-- Email -->
-                <div class="emailForms">
-                    <label for="email">Email</label>
-                    <div class="emailInput">
-                        <input type="email" name="email" id="email">
-                    </div>
-                </div>
-                <!-- Card information -->
-                <div class="cardInformation">
-                    <label for="cardInformation">Card Information</label>
-                    <div class="cardInputs">
-                        <div class="inputCard">
-                            <input type="text" maxlength="19" autocomplete="off" placeholder="1234 1234 1234 1234" name="cardInformation" id="cardInformation">
-                            <div class="cardImages">
-                                <img src="images/Visa.png" alt="Visa">
-                                <img src="images/Mastercard.png" alt="Master Card">
-                                <img src="images/American-Express.png" alt="American Express">
-                                <img src="images/Discover.png" alt="Discover">
-                            </div>
+                <form action="">
+                        <!-- Email -->
+                    <div class="emailForms">
+                        <label for="email">Email</label>
+                        <div class="emailInput">
+                            <input type="email" name="email" id="email">
                         </div>
-                        <div class="inputsPass">
-                            <input type="text" placeholder="MM / YY" name="cardInformation" id="cardExpiration">
-                            <div class="inputCcv">
-                                <input type="text" placeholder="CVC" name="password" id="cardPassword" maxlength="3">
-                                <div class="ccvImage">
-                                    <img src="./images/CVC-Card.png" alt="CVC">
+                    </div>
+                    <!-- Card information -->
+                    <div class="cardInformation">
+                        <label for="cardInformation">Card Information</label>
+                        <div class="cardInputs">
+                            <div class="inputCard">
+                                <input type="text" maxlength="19" autocomplete="off" placeholder="1234 1234 1234 1234" name="cardInformation" id="cardInformation">
+                                <div class="cardImages">
+                                    <img src="images/Visa.png" alt="Visa">
+                                    <img src="images/Mastercard.png" alt="Master Card">
+                                    <img src="images/American-Express.png" alt="American Express">
+                                    <img src="images/Discover.png" alt="Discover">
+                                </div>
+                            </div>
+                            <div class="inputsPass">
+                                <input type="text" maxlength="5" placeholder="MM / YY" name="cardInformation" id="cardExpiration">
+                                <div class="inputCcv">
+                                    <input type="text" placeholder="CVC" name="password" id="cardPassword" maxlength="3">
+                                    <div class="ccvImage">
+                                        <img src="./images/CVC-Card.png" alt="CVC">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Name on card -->
-                <div class="nameCard">
-                    <label for="nameCard">Name on card</label>
-                    <div class="inputName">
-                        <input type="text">
-                    </div>
-                </div>
-                <!-- Country or region -->
-                <div class="countryRegion">
-                    <label for="country">Country or Region</label>
-                    <div class="content-select">
-                        <select name="countries" id="countries"></select>
-                        <img src="images/icons8-chevron-abajo-100.png" alt="Chevron abajo">
-                        <div class="zip-input">
-                            <input type="zip" name="zip" id="zip" placeholder="ZIP">
+                    <!-- Name on card -->
+                    <div class="nameCard">
+                        <label for="nameCard">Name on card</label>
+                        <div class="inputName">
+                            <input type="text">
                         </div>
                     </div>
-                </div>
-                <!-- Button pay card -->
-                <div class="payCard">
-                    <button>Pay $899.00</button>
-                </div>
+                    <!-- Country or region -->
+                    <div class="countryRegion">
+                        <label for="country">Country or Region</label>
+                        <div class="content-select">
+                            <select name="countries" id="countries"></select>
+                            <img src="images/icons8-chevron-abajo-100.png" alt="Chevron abajo">
+                            <div class="zip-input">
+                                <input type="zip" name="zip" id="zip" placeholder="ZIP">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button pay card -->
+                    <div class="payCard">
+                        <button type="submit">Pay $899.00</button>
+                    </div>
+                </form>
             </section>
         </div>
     </main>
